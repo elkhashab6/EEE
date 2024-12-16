@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background: #f5f5f5;
+}
+
+.sidebar {
+    background: #2c3e50;
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.nav-link {
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background: #34495e;
+    color: white;
+}
+
+.stats-card {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+}
+
+.chart-container {
+    height: 300px;
+    margin: 20px 0;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.data-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.account-form {
+    margin-bottom: 0;
+}
+
+.account-form input {
+    text-align: left;
+    direction: ltr;
+}
+
+#accounts .card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#accounts .card-header {
+    padding: 1rem;
+}
+
+.table input {
+    min-width: 100px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table input[readonly] {
+    background-color: #f8f9fa;
+}
