@@ -11,22 +11,49 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Content from محاسبه 2222.html -->
-    <!-- ... -->
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 col-lg-2 sidebar">
+      <h3 class="mb-4 text-center">النظام المحاسبي</h3>
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#" data-page="dashboard"><i class="fas fa-home ml-2"></i> الرئيسية</a>
+        <a class="nav-link" href="#" data-page="invoices"><i class="fas fa-file-invoice-dollar"></i> الفواتير</a>
+        <a class="nav-link" href="#" data-page="inventory"><i class="fas fa-boxes"></i> المخزون</a>
+        <a class="nav-link" href="#" data-page="customers"><i class="fas fa-users"></i> العملاء</a>
+        <a class="nav-link" href="#" data-page="suppliers"><i class="fas fa-user-tie"></i> الموردين</a>
+        <a class="nav-link" href="#" data-page="reports"><i class="fas fa-chart-bar"></i> التقارير</a>
+        <a class="nav-link" href="#" data-page="settings"><i class="fas fa-cog"></i> الإعدادات</a>
+        <a class="nav-link" href="#" data-page="accounts"><i class="fas fa-tree"></i> شجرة الحسابات</a>
+      </nav>
+    </div>
 
-    <!-- JavaScript Files -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="js/charts.js"></script>
-    <script src="js/invoices.js"></script>
-    <script src="js/inventory.js"></script>
-    <script src="js/customers.js"></script>
-    <script src="js/suppliers.js"></script>
-    <script src="js/reports.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Main Content -->
+    <div class="col-md-9 col-lg-10 main-content">
+      <!-- Dashboard Page -->
+      <div id="dashboard" class="page active">
+        {{ ... }}
+      </div>
+
+      <!-- Other pages content -->
+      {{ ... }}
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript Files -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="js/charts.js"></script>
+<script src="js/invoices.js"></script>
+<script src="js/inventory.js"></script>
+<script src="js/customers.js"></script>
+<script src="js/suppliers.js"></script>
+<script src="js/reports.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
